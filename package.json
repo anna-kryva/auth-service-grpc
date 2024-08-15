@@ -24,10 +24,12 @@
     "seed": "yarn ts-node src/seed.ts"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.11.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.0",
     "@nestjs/jwt": "^10.2.0",
+    "@nestjs/microservices": "^10.4.1",
     "@nestjs/platform-express": "^10.0.0",
     "@prisma/client": "5.10.2",
     "bcrypt": "^5.1.1",
@@ -37,9 +39,11 @@
     "dotenv": "^16.4.5",
     "prisma": "^5.10.2",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "ts-proto": "^1.181.1"
   },
   "devDependencies": {
+    "@bufbuild/buf": "^1.36.0",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",

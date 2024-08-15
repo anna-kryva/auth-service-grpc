@@ -1,0 +1,11 @@
+version: v2
+plugins:
+  - local: node_modules/ts-proto/protoc-gen-ts_proto
+    out: src/grpc/types
+    strategy: all
+    opt:
+      - nestJs=true
+      - addGrpcMetadata=true
+      - addNestjsRestParameter=true
+      - snakeToCamel=true
+      - useOptionals=messages
